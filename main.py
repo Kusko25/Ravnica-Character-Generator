@@ -1,5 +1,5 @@
 import database as db
-import numpy.random as npr
+import random as npr
 
 class Character:
     def __init__(self,**kwargs):
@@ -111,7 +111,7 @@ def scanChar():
     print("\t- role (role=Lab Assistant)")
     print("Example: Male/Human/Rogue/Dimir/age=56")
 
-    inString = input()
+    inString = input("\n")
     parameters = [x.strip() for x in inString.split("/")]
     attributes = dict()
 
